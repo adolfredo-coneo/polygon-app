@@ -14,11 +14,9 @@ const Canvas = () => {
     if (point) {
       setPoints((currentPoints) => [...currentPoints, point]);
     }
-    console.log('clicked', points);
   };
 
   const handleClearCanvas = () => {
-    console.log('clicked', points);
     clearCanvas(canvasRef);
     setPoints([]);
   };
